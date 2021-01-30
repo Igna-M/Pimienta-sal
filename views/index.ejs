@@ -20,7 +20,7 @@
           <img
             src="/images/principal.jpg"
             class="ps-round ps-image ps-opacity-min"
-            alt="SAbores que enamoran"
+            alt="Sabores que enamoran"
             width="600"
             height="750"
           />
@@ -55,9 +55,9 @@
           <h1 class="ps-center">Nuestro Menu</h1>
           
           <br />
-          <!-- <% let platos = ['Carpaccio fresco', 'Risotto de berenjena',] %> -->
           <% for (let i = 0; i < menu.length; i++) { %>
-            <h4><%= menu[i]['nombre'] %></h4>
+            <h4><a href="/detalles/<%= i+1 %>">
+              <%= menu[i]['nombre'] %></a></h4>
             <p class="ps-text-grey">
               <%= menu[i]['descripcion'] + '   U$S ' + menu[i]['precio'] %>
             </p>  
